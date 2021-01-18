@@ -17,16 +17,30 @@ nav {
 
 .menu {
     display: flex;
-	justify-content: space-between;
-	padding: 13px 70px;
+    justify-content: space-between;
+    align-content: center;
+	
 	margin: 0;
     list-style-type: none;
+    height: 100%;
+    &_item {
+        flex-basis: 100%;
+        text-align: center;
+        height: 50px;
+        
+    }
     &_link {
+
         color: #ffffff;
         font-style: 15px;
         font-weight: 300;
-	&:hover {
+        display: block;
+        height: 100%;
+        line-height: 50px;
+        
+        &:hover {
             color: white;
+            background-color: rgb(35, 42, 129);
         }
     }
 }
@@ -36,39 +50,47 @@ nav {
 }
 
 .services {
-    min-height: 900px;
+    min-height: 600px;
     padding-top: 30px;
+    /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
+    background: url('../img/Back_new.png') center (center / cover) no-repeat;
     &_wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-content: space-between;
-        padding-top: 30px;
+        padding-top: 10px;
         a:hover {
             text-decoration: none;
         }
     }
     &_block {
         width: 300px;
-        height: 230px; 
-        border: 1px solid grey;
+        height: 200px; 
+        /* border: 1px solid grey; */
         margin-top: 20px;
+        transition: 0.5s ;
         &:hover {
-            box-shadow: 13px 7px 40px 4px rgba(34, 60, 80, 0.27);
+            /* box-shadow: 13px 7px 40px 4px rgba(34, 60, 80, 0.27);*/ 
+            box-shadow: 0 0 0 2px #eaeaf0 inset, 0 0 0 4px white inset, 13px 7px 40px 4px rgba(34, 60, 80, 0.27);
         }
         img {
+            width: 220px;
+            height: 150px;
             display: block;
-            margin: 0 auto;   
+            margin: 0 auto;
+            padding-top: 9px;   
         }
     }
     &_descr {
-        margin-top: 20px;
+        margin-top: 10px;
         text-align: center;
-        color: black;
+        color: white;
     }
 }
 
 .footer {
+    margin-top: 30px;
     height: 630px;
     &_info {
         height: 100px;
@@ -84,9 +106,14 @@ nav {
 
 .main_title {
     text-align: center;
+    font-size: 28px;
 }
 .subtitle {
     text-align: center;
+    &_white {
+        color: white;
+        font-size: 28px;
+    }
 }
 
 

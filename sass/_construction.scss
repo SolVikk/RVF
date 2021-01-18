@@ -1,0 +1,52 @@
+.about-text dl {
+    margin-top: 20px;
+    dd {
+        margin-top: 10px;
+        margin-left: 25px;
+        line-height: 1em;
+    }
+}
+
+.advantages {
+    min-height: 600px;
+    padding-top: 30px;
+    /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
+    background: url('../img/Back_new.png') center (center / cover) no-repeat;
+}
+
+.staff, .technics {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    &_photo {
+        margin-bottom: 20px;
+    }
+    &_photo1 {
+        width: 320px;
+    }
+    &_photo2 {
+        display: block;
+        width: 250px;
+        margin: 10px auto;
+    }
+    &_descr {
+        margin-left: 150px;
+        margin-top: 15px;
+    }
+    &_text {
+        margin-top: 15px; 
+        color: rgb(211, 210, 214);
+    }
+    &_subtitle {
+        color: white;
+    }
+}
+
+.technics_descr {
+    margin-left: 0;
+    margin-right: 150px;
+}
+
+.technics_photo2 {
+    width: 200px;
+}
