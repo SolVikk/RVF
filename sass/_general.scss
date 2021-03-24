@@ -50,8 +50,9 @@ nav {
 }
 
 .services {
-    min-height: 600px;
+    min-height: 400px;
     padding-top: 30px;
+    padding-bottom: 30px;
     /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
     background: url('../img/Back_new.png') center (center / cover) no-repeat;
     &_wrapper {
@@ -65,8 +66,8 @@ nav {
         }
     }
     &_block {
-        width: 300px;
-        height: 200px; 
+        width: 400px;
+        height: 230px; 
         /* border: 1px solid grey; */
         margin-top: 20px;
         transition: 0.5s ;
@@ -75,8 +76,8 @@ nav {
             box-shadow: 0 0 0 2px #eaeaf0 inset, 0 0 0 4px white inset, 13px 7px 40px 4px rgba(34, 60, 80, 0.27);
         }
         img {
-            width: 220px;
-            height: 150px;
+            width: 280px;
+            height: 185px;
             display: block;
             margin: 0 auto;
             padding-top: 9px;   
@@ -86,6 +87,7 @@ nav {
         margin-top: 10px;
         text-align: center;
         color: white;
+        font-size: 21px;
     }
 }
 
@@ -106,7 +108,7 @@ nav {
 
 .main_title {
     text-align: center;
-    font-size: 28px;
+    font-size: 36px;
 }
 .subtitle {
     text-align: center;
