@@ -1,0 +1,70 @@
+.risk-text {
+    padding-top: 30px;
+    color: white;
+    .red {
+        color: #f93b3bf5;
+        font-weight: bold;
+    }
+    .about_subtitle {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    }
+}
+
+.about span {
+    font-size: 28px;
+}
+
+.foreign_about-text {
+    margin-top: 40px;
+}
+
+.rent-advantages {
+    color: white;
+}
+
+.risk {
+    min-height: 300px;
+    padding: 30px 0;
+    /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
+    background: url('../img/Back_new.png') center (center / cover) no-repeat;
+    .about_subtitle {
+        color: white;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+.advantages-foreign {
+    min-height: 300px;
+    padding: 30px 0;
+    color: black;
+    
+}
+
+.advantages_wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.foreign_descr {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.process {
+    min-height: 230px;
+    padding: 30px 0;
+    background: url('../img/Back_new.png') center (center / cover) no-repeat;
+    color: white;
+    ul {
+        padding-top: 30px;
+    }
+}
+
+.process_block {
+    padding-top: 30px;
+}

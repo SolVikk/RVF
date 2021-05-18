@@ -1,12 +1,22 @@
 .header {
     min-height: 100px;
     padding-top: 10px;
+    line-height: 100px;
+    
     &_wrapper {
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    img {
+        width: 150px;
+        
+    }
+}
+
+a {
+    color: black;
 }
 
 nav {
@@ -14,6 +24,7 @@ nav {
 	height: 50px;
 	background-color: rgb(71, 80, 204);
 }
+
 
 .menu {
     display: flex;
@@ -32,8 +43,8 @@ nav {
     &_link {
 
         color: #ffffff;
-        font-style: 15px;
-        font-weight: 300;
+        font-size: 18px;
+        font-weight: 500;
         display: block;
         height: 100%;
         line-height: 50px;
@@ -41,17 +52,63 @@ nav {
         &:hover {
             color: white;
             background-color: rgb(35, 42, 129);
+            
         }
     }
 }
+
+.menu_item-services {
+    position: relative;
+    &:hover .submenu {
+        display: block;
+        background-color: rgb(71, 80, 204);;
+        line-height: 50px;
+    }
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    li {
+        list-style-type: none;
+    }
+    li a {
+        display: block;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        height: 100%;
+        line-height: 36px;  
+    }
+    li a:hover {
+        background-color: rgb(35, 42, 129);
+    } 
+}
+
+.small-link {
+    font-size: 14px;
+  }
+
+
 
 .about {
     padding: 30px;
 }
 
 .services {
-    min-height: 600px;
+    min-height: 400px;
     padding-top: 30px;
+    padding-bottom: 30px;
     /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
     background: url('../img/Back_new.png') center (center / cover) no-repeat;
     &_wrapper {
@@ -65,8 +122,8 @@ nav {
         }
     }
     &_block {
-        width: 300px;
-        height: 200px; 
+        width: 400px;
+        height: 100%; 
         /* border: 1px solid grey; */
         margin-top: 20px;
         transition: 0.5s ;
@@ -75,8 +132,8 @@ nav {
             box-shadow: 0 0 0 2px #eaeaf0 inset, 0 0 0 4px white inset, 13px 7px 40px 4px rgba(34, 60, 80, 0.27);
         }
         img {
-            width: 220px;
-            height: 150px;
+            width: 280px;
+            height: 185px;
             display: block;
             margin: 0 auto;
             padding-top: 9px;   
@@ -86,6 +143,10 @@ nav {
         margin-top: 10px;
         text-align: center;
         color: white;
+        font-size: 21px;
+        &-sm {
+            font-size: 16px;
+        }
     }
 }
 
@@ -94,7 +155,7 @@ nav {
     height: 630px;
     &_info {
         height: 100px;
-        width: 300px;
+        width: 500px;
         margin: 20px auto;
         p, address, a {
             margin-bottom: 0,5em;
@@ -106,7 +167,7 @@ nav {
 
 .main_title {
     text-align: center;
-    font-size: 28px;
+    font-size: 36px;
 }
 .subtitle {
     text-align: center;
