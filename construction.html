@@ -13,12 +13,12 @@
     <header class='header'>
         <div class="container">
             <div class="header_wrapper">
-                <a href="#"><img src="#" alt="logo"></a>
+                <a href="#"><img src="img/logo.jpg" alt="logo"></a>
             
-                <div class="call-us"><a class='header__phone' href="tel:000000000 ">8 (499) xxx-xx-xx </a>
+                <div class="call-us"><a class='header__phone' href="tel:+74997397176">8 (499) 739-71-76 </a>
                 </div>
 
-                <div class="write-us"><a href="mailto:xxx@xxx.ru">xxx@xxx.ru</a></div>
+                <div class="write-us"><a href="mailto:contact@rujobpro.ru">contact@rujobpro.ru</a></div>
             </div>
         </div>
     </header>
@@ -27,9 +27,16 @@
         <div class="container">           
             <ul class="menu">
                 <li class="menu_item"><a href="index.html" class="menu_link">Главная</a></li>
-                <li class="menu_item"><a href="index.html#about" class="menu_link">О нас</a></li>
-                <li class="menu_item"><a href="index.html#services" class="menu_link">Услуги</a></li>
-                <li class="menu_item"><a href="index.html#contacts" class="menu_link">Контакты</a></li>
+                <li class="menu_item"><a href="index.html" class="menu_link">О нас</a></li>
+                <li class="menu_item menu_item-services"><a href="index.html#services" class="menu_link">Услуги</a>
+                    <ul class="submenu">
+                        <li><a href="construction.html">Строительство</a></li>
+                        <li><a class="small-link" href="rent.html">Подбор и аренда персонала</a></li>
+                        <li><a href="migration.html">Миграционные услуги</a></li>
+                        <li><a href="disputes.html">Правовые споры</a></li>                
+                    </ul>
+                </li>
+                <li class="menu_item"><a href="#contacts" class="menu_link">Контакты</a></li>
             </ul>
         </div>
     </nav>
@@ -98,19 +105,139 @@
         </div>
     </section>
 
+    <section class="candidates">
+        <div class="container">
+            <div class="candidates_text">
+                <h2 class="subtitle ">Трудоустройство</h2>
+                <ul>
+                    <li>Помощь в поиске кандидатов на требуемые должности рабочих профессий как россиян, так и иностранных граждан.</li>
+                    <li>Регистрация на сайте бесплатная.</li>
+                    <li>Каждая заявка, сроки рассмотрения и поиск требуемых кандидатов рассматривается индивидуально.</li>
+                    <li>Возможность кадрового сопровождения.</li>
+                    <li>Официальное трудоустройство по ТК РФ.</li>
+                    <li>Сопровождаем до факта выхода на работу.</li>
+                    <li>Зарегистрируйтесь на нашем сайте и заполните простую анкету (бесплатно).</li>
+                    <li>По мере появления у наших клиентов работодателей подходящих вакансий, мы свяжемся с вами.</li>
+                </ul>
+
+<!--                 <p>
+                    Помощь в поиске кандидатов на требуемые должности рабочих профессий как россиян, так и иностранных граждан. Регистрация на сайте бесплатная. Каждая заявка, сроки рассмотрения и поиск требуемых кандидатов рассматривается индивидуально. Возможность кадрового сопровождения. Официальное трудоустройство по ТК РФ. Сопровождаем до факта выхода на работу. Зарегистрируйтесь на нашем сайте и заполните простую анкету (бесплатно). По мере появления у наших клиентов работодателей подходящих вакансий, мы свяжемся с вами
+                </p> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="vacancy">
+        <div class="container">
+            <h2 class="subtitle subtitle_white">Вакансии</h2>
+            <!-- <p>Нажми <a href="#hidden1" onclick="view('hidden1'); return false">эту ссылку</a></p>  
+            <div id="hidden1" style="display: none;">
+            <h3>Тут заголовок</h3>
+            <p>А тут основной текст</p></div> -->
+            <div class="application">  
+
+                <button onclick="document.getElementById('id01').style.display='block'">Нажмите, чтобы заполнить анкету</button>
+
+                <!-- Модальный (содержит форму регистрации) -->
+                <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть модальный">X</span>
+                <form class="modal-content" action="action_page.php" method="POST">
+                    <div class="form_wrapper">
+                    <h1>Анкета на доступные вакансии</h1>
+                    <p>Пожалуйста, заполните эту анкету, чтобы мы подобрали вакансии для Вас</p>
+                    <hr>
+
+                    <label for="fname">Имя</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ваше имя" required>
+                    
+                    <label for="lname">Фамилия</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия" required>
+
+                    <label for="oname">Отчество</label> 
+                    <input type="text" id="otname" name="otname" placeholder="Ваше отчество" required>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХХХ" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Ваша почта" name="email" required>
+
+                    <label for="region">Ваш Email</label>
+                    <input type="text" id="region" name="region" placeholder="Область, город" required>
+
+                    <label for="sphere">Род деятельности</label> 
+                    <input type="text" id="sphere" name="sphere" placeholder="Ваш род деятельности" required>
+
+                    <label for="exp">Опыт работы</label> 
+                    <input type="text" id="exp" name="exp" placeholder="Сколько работаете в данной сфере ?" required>
+
+                    <label for="info">Дополнительная информация</label> <br> 
+                    <textarea name="info" id="info" rows="10" cols="70">
+                    </textarea>
+
+                    <p><b>После отправки анкеты с Вами свяжутся</b></p> 
+
+                    <button type="submit" class="signup">Отправить анкету</button>
+
+                    
+
+
+                </form>
+                </div>
+
+
+               <!--  <button class="open_btn" onclick="location.hash ='zatemnenie'">Нажмите, чтобы заполнить анкету </button>
+                <div id="zatemnenie">
+                   <window>
+                       <a href="#close_window" class="close_window">X</a>
+                       <form action="action_page.php">
+
+                        <label for="fname">Имя</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Ваше имя">
+                    
+                        <label for="lname">Фамилия</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия">
+
+                        <label for="oname">Фамилия</label>
+                        <input type="text" id="otname" name="otname" placeholder="Ваша фамилия">
+                    
+                        <label for="country">Страна</label>
+                        <select id="country" name="country">
+                          <option value="australia">Австралия</option>
+                          <option value="canada">Канада</option>
+                          <option value="usa">США</option>
+                        </select>
+                    
+                        <label for="subject">Сообщение</label>
+                        <textarea id="subject" name="subject" placeholder="Написать нечто.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Отправить">
+                    
+                      </form>
+                   </window>
+                </div>	 -->
+            </div> 
+        </div>
+    </section>
+
     <footer class='footer' >
         <div class="footer-wrapper" id='contacts'>          
             <div class="container">
                 <h2 class="subtitle">Контакты</h2>
                 <div class="footer_info">
-                    <p class='company-name'>Компания: ООО "РВФ"</p>
+                    <p class='company-name'>Компания: ООО "МежРегионТрудРесурс"</p>
                     <address class='footer_addr'>Москва, ул. Обручева, д.13 кор.1</address>
-                    <a class='footer_phone' href="tel:000000000">8 (499) xxx-xx-xx </a>
+                    <a class='footer_phone' href="tel:+74997397176">8 (499) 739-71-76 </a>
                  </div>
             </div>
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A354cfa54db12539e438f7319943af3239c2ac89148b4a2582f4999988dc83139&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe>
         </div>
     </footer>
+
+<!--     <script>function view(n) {
+        style = document.getElementById(n).style;
+        style.display = (style.display == 'block') ? 'none' : 'block';
+    }</script> -->
 
 </body>
 </html>
